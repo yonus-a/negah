@@ -1,0 +1,212 @@
+:root {
+  --clr-black: #555;
+  --section-top-margin: 4em;
+}
+
+@font-face {
+  font-family: "IranYkan";
+  src: url("/public/fonts/iranyekan-400.woff2") format("woff2"), url("/public/fonts/iranyekan-400.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IranYkan";
+  src: url("/public/fonts/iranyekan-500.woff2") format("woff2"), url("/public/fonts/iranyekan-500.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IranYkan";
+  src: url("/public/fonts/iranyekan-700.woff2") format("woff2"), url("/public/fonts/iranyekan-700.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IranYkan";
+  src: url("/public/fonts/iranyekan-700.woff2") format("woff2"), url("/public/fonts/iranyekan-700.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "IranYkan";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  margin-top: 90px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+header {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+header nav {
+  padding: 1.3em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav a {
+  padding: 1em;
+  display: inline-block;
+  color: black;
+}
+header nav a.active, header nav a:hover {
+  font-weight: bold;
+}
+
+.hero .swiper {
+  height: 600px;
+}
+.hero .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about {
+  margin-top: var(--section-top-margin);
+}
+.about p {
+  text-align: justify;
+}
+
+.locations {
+  margin-top: var(--section-top-margin);
+}
+.locations h2 {
+  margin-bottom: 1.5em;
+}
+.locations img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.locations .gallary {
+  -moz-columns: 2;
+       columns: 2;
+}
+@media (max-width: 970px) {
+  .locations .gallary {
+    -moz-columns: 1;
+         columns: 1;
+  }
+}
+.locations img:nth-child(4) {
+  display: block;
+  -moz-column-span: all;
+       column-span: all;
+}
+
+.booking {
+  margin-top: var(--section-top-margin);
+}
+.booking form .input-group {
+  margin-top: 1em;
+  display: grid;
+  gap: 0.5em;
+}
+.booking form .input-group input,
+.booking form .input-group select {
+  padding: 0.5em;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--clr-black);
+}
+.booking form .input-group button {
+  margin-top: 2em;
+  padding: 1em;
+  border: none;
+  background: #555;
+  border-radius: 5px;
+  color: white;
+}
+
+.map {
+  margin-top: var(--section-top-margin);
+}
+.map iframe {
+  width: 100%;
+}
+
+footer {
+  margin-top: calc(var(--section-top-margin) * 2);
+  background: #555;
+  color: white;
+}
+footer address {
+  padding-top: 2.5em;
+}
+footer nav {
+  margin-top: 2.5em;
+}
+footer nav ul {
+  display: flex;
+}
+footer nav ul a {
+  margin-left: 1.5em;
+  display: inline-block;
+  text-decoration: underline;
+  color: white;
+}
+footer p {
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}/*# sourceMappingURL=style.css.map */

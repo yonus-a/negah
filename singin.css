@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin {
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3), 0 0 0 100vh rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  border-radius: 1em;
+}
+.signin h1 {
+  margin-bottom: 1.1em;
+  text-align: center;
+}
+.signin form {
+  display: grid;
+  gap: 1.3em;
+}
+.signin form label {
+  display: grid;
+  gap: 0.5em;
+}
+.signin form label input {
+  border-radius: 10px;
+  padding: 1em;
+  width: 43ch;
+}
+.signin form button {
+  padding: 1em;
+  border: 1em;
+  border-radius: 10px;
+  background-color: #111;
+  margin-top: 1em;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}/*# sourceMappingURL=singin.css.map */
