@@ -54,7 +54,8 @@ if ($uploadOk == 0) {
     require("utils/dbconnect.php");
     
     $conn = dbconnect();
-    $sql = "INSERT INTO image (name) VALUES ('$imageName')";
+    $userId = $_SESSION['user']['id'];
+    $sql = "INSERT INTO image (name, userId) VALUES ('$imageName', $userId)";
 
     if($conn->query($sql) === true) {
       echo "image has sucessfully uploaded";

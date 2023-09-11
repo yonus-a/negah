@@ -1,9 +1,12 @@
 <?php
+  session_start();
+
   require("utils/dbconnect.php");
 
   $conn = dbconnect();
+  $userId = &$_SESSION['user']['id'];
 
-  $sql = "SELECT * FROM image";
+  $sql = "SELECT * FROM image WHERE userId='$userId'";
   $result = $conn->query($sql);
 ?>
 
